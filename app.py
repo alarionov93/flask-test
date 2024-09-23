@@ -10,5 +10,5 @@ def hello_world():
 @app.route("/login", methods=['POST'])
 def login():
     u = request.args.get('user')
-    p = request.args.get('password')
+
     return jsonify({'success': True})
