@@ -9,8 +9,6 @@ def hello_world():
 
 @app.route("/login", methods=['POST'])
 def login():
-    # res = log_in(user, passwd)
     u = request.args.get('user')
     p = request.args.get('password')
-    res = True
-    return jsonify({'success': (res, u, p)})
+    return jsonify({'success': True})
